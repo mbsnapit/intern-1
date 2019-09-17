@@ -10,15 +10,10 @@ public class Main {
         Integer n = 0;
 
 
-        //Creating a random method
-        //Random rand = new Random();
-
-        //Assigning variable with random number
-        //n = 8; //rand.nextInt(25);
-
-        //Creating new string array with length of n
+        //Create a new array
         int[] FuzzyArray = new int[8];
 
+        //inserting values into array
         FuzzyArray[0] = 52;
         FuzzyArray[1] = 82;
         FuzzyArray[2] = 100;
@@ -29,41 +24,34 @@ public class Main {
         FuzzyArray[7] = 9;
 
 
-
+         //finding min of two values in array
         int min0 = Math.min(FuzzyArray[0],FuzzyArray[1]);
         int min1 = Math.min(FuzzyArray[2],FuzzyArray[3]);
         int min2 = Math.min(FuzzyArray[4],FuzzyArray[5]);
         int min3 = Math.min(FuzzyArray[6],FuzzyArray[7]);
+
+        //finding min of two mins
         int min4 = Math.min(min2,min3);
         int min5 = Math.min(min0,min1);
         int minnie = Math.min(min4,min5);
 
+        //finding max of two values in array
         int max0 = Math.max(FuzzyArray[0],FuzzyArray[1]);
         int max1 = Math.max(FuzzyArray[2],FuzzyArray[3]);
         int max2 = Math.max(FuzzyArray[4],FuzzyArray[5]);
         int max3 = Math.max(FuzzyArray[6],FuzzyArray[7]);
+
+        //finding min of two max's
         int max4 = Math.max(max2, max3);
         int max5 = Math.max(max0,max1);
         int maxxie = Math.max(max4,max5);
 
+        //finding difference between min and max
         int bigdiff = maxxie - minnie;
                 System.out.print(bigdiff);
 
 
-//        int i;
-//        for(i = 0; i < n; ++i){
-//
-//            FuzzyArray[i] = String.valueOf(i);
-//            //System.out.print( FuzzyArray[i] + " ");
 
-
-           //int min = i;
-        //int max = i;
-
-          //    min = Math.min(min, n);
-            //  max = Math.max(max, n);
-
-            // System.out.print(min + "  "+ max);
 
 
     }
